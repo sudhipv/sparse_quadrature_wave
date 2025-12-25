@@ -1,0 +1,11 @@
+.DS_Store
+
+# Local experiment outputs
+outputs/
+
+# Generated solver data
+NISP_wave/serial/**/u_nisp_*.mat
+NISP_wave/u_nisp_*.mat
+acoustic_MCS/u_MCS_*.mat
+acoustic_MCS/nS.mat
+acoustic_MCS/6000_membrane/

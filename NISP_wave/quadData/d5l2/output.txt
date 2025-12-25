@@ -1,0 +1,16 @@
+generate_quad() : parameters ================================= 
+ ndim     = 5 
+ quadType = HG 
+ fsType   = sparse 
+ param    = 2 
+Level 0 / 2
+Sorting quadrature of size 1
+Quadrature size 1 points
+Level 1 / 2
+Sorting quadrature of size 21
+Quadrature size 11 points
+Level 2 / 2
+Sorting quadrature of size 221
+Quadrature size 81 points
+generate_quad() : total number of quadrature points: 81
+generate_quad() : done ========================================

@@ -1,0 +1,7 @@
+generate_quad() : parameters ================================= 
+ ndim     = 1 
+ quadType = HG 
+ fsType   = full 
+ param    = 2 
+generate_quad() : total number of quadrature points: 2
+generate_quad() : done ========================================
