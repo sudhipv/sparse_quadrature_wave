@@ -6,8 +6,6 @@ This repository contains two closely related workflows for stochastic acoustic w
 - **`NISP_wave/`** implements non-intrusive spectral projection (NISP) with sparse quadrature, sharing the same preprocessing utilities.
 - **`matlab_scripts/`** provides MATLAB post-processing utilities for inspecting Monte Carlo outputs (`MCS_pdf`, `MCS_variance`) and for comparing solver results against reference data (`MCS_process`).
 
-The repo now tracks only source code and reproducible input decks. Large solver outputs such as `u_nisp_mean.mat` and `u_MCS_mean.mat` have been removed, and `.gitignore` prevents them from being re-added inadvertently.
-
 ---
 
 ## Repository Layout
@@ -88,12 +86,8 @@ All deleted `.mat` artifacts are solver outputs and can be regenerated:
 If additional heavy outputs should remain local only, add their patterns to `.gitignore`.
 
 ---
+## Questions ?
+Contact : Sudhi Sharma P V : sudhisharmapadillath@gmail.com
 
-## Notes and Tips
 
-- Keep large experiment folders (e.g., `outputs/`) outside version control; the scripts now point to `repo_root/outputs/...` by default, so create those directories locally.
-- `NISP_wave/quad.sh` assumes a local UQTk installation path – adjust `cd /Users/.../UQTk-install/bin` to your environment.
-- To keep the repository lightweight before pushing, periodically remove generated `.mat` files via the provided clean-up scripts or `rm` commands; `.gitignore` prevents accidental staging.
-- The MATLAB scripts assume the SSFEM reference CSVs in `acoustic_MCS/ssfem_solver/` stay in place; keep those files tracked to reproduce figures.
 
-With the repo trimmed to sources and configuration files only, it is well below GitHub’s size thresholds and safe to push without Git LFS. Refer to this README whenever you regenerate data to ensure the structure stays organized.
